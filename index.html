@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio</title>
+    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/62df35a1e5.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -33,7 +35,7 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="images/shivamuser.jpg" alt="my photo">
+                    <img src="images/shivamuser.jpg" alt="">
                 </div>
                 <div class="about-col-2">
                     <h1 class="subtitle">About Me</h1>
@@ -53,25 +55,25 @@
                         projects in the world of web development.</p>
 
                     <div class="tab-titles">
-                        <p class="tab-links active-link">Skills</p>
-                        <p class="tab-links">Experience</p>
-                        <p class="tab-links">Education</p>
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links"onclick="opentab('education')">Education</p>
                     </div>
-                    <div class="tab-contents">
+                    <div class="tab-contents active-tab" id="skills" >
                         <ul>
                             <li><span>Web development</span><br> Developing dynamic and static websites.</li>
                             <li><span>UI/UX</span> <br> Designing web/App interfaces</li>
                             <li><span>Linux Admin</span> <br> Advance linux administrator</li>
                         </ul>
                     </div>
-                    <div class="tab-contents">
+                    <div class="tab-contents" id="experience" >
                         <ul>
                             <li><span>2023-current</span><br> Learning javascript data sturcture and algorithm</li>
                             <li><span>Internship 2022-2023</span> <br> Worked as an intern in a startup</li>
                             <li><span>Internship</span> <br> worked as apprentice in a startup.</li>
                         </ul>
                     </div>
-                    <div class="tab-contents">
+                    <div class="tab-contents" id="education">
                         <ul>
                             <li><span>Bsc in physics(2022-2025)</span><br>Currently pursuing bachelor of physics in CM.
                                 Sc college, Darbhanga.</li>
@@ -85,6 +87,33 @@
             </div>
         </div>
     </div>
+  <!-- -----------------------------services---------- -->
+  <div id="services">
+    <div class="container">
+        <h1 class="subtitle">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code" style="color: #dae1ec;"></i>
+                <h2>Web Designing</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur optio itaque temporibus voluptatibus ipsum repudiandae veritatis natus iure sit eius!</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-palette" style="color: #dae1ec;"></i>
+                <h2>UI/UX Desinger</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur optio itaque temporibus voluptatibus ipsum repudiandae veritatis natus iure sit eius!</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-linux" style="color: #dae1ec;"></i>
+                <h2>Linux Admin</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur optio itaque temporibus voluptatibus ipsum repudiandae veritatis natus iure sit eius!</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+  </div>
+
 </body>
 
 </html>
