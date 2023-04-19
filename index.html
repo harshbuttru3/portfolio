@@ -16,13 +16,15 @@
         <div class="container">
             <nav>
                 <img src="images/shivam.png" class="logo" alt="logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Service</a></li>
-                    <li><a href="#">portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Service</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" style="color: #e7ebf3;" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" style="color: #d6d8dc;" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>Web Developer</p>
@@ -113,7 +115,99 @@
         </div>
     </div>
   </div>
+  <!-- --------------------------------------Protfolio---------- -->
+  <div id="portfolio">
+    <div class="container">
+        <h1 class="subtitle">My Works</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png" alt="">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connects you to the talented peooples around the world</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #012cea;"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png" alt="">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>This is a great music streaming app like spotify.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #012cea;"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png" alt="">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connects you to the talented peooples around the world</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #012cea;"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
 
+    </div>
+  </div>
+    <!-- --------------------------------------contact----------------- -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="subtitle">Contact Me</h1>
+                        <p><i class="fa-regular fa-envelope" style="color: #f72222;"></i><a href="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=shivamkumarpaswan7488700578@gmail.com&tf=1" target="_blank" rel="noopener noreferrer">shivamkumarpaswan7488700578@gmail.com</a></p>
+                        <p><i class="fa-solid fa-phone" style="color: #7be641;"></i>7488700578</p>
+                        <div class="social-icons">
+                            <a href="https://instagram.com/harshbuttru3" target="_blank"><i class="fa-brands fa-instagram" style="color: #E4405F;"></i></a>
+                            <a href="https://github.com/harshbuttru3" target="_blank"><i class="fa-brands fa-github" style="color: #5a5858;"></i></a>
+                            <a href="https://t.me/user_name_is_unavailable" target="_blank"><i class="fa-brands fa-telegram" style="color: #1765ee;"></i></a>
+                            
+                        </div>
+                        <a href="images/shivam kumar.pdf" download class="btn btn2">Download cv</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="message" id=""  rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Made by Harsh with <i class="fa-solid fa-heart" style="color: #f2070f;"></i></p>
+            </div>
+        </div>
+<script>
+   var sidemeu = document.getElementById("sidemenu");
+function openmenu(){
+  sidemeu.style.right = "0";
+}
+function closemenu(){
+    sidemeu.style.right = "-200px"
+}
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzRv9lpODh7Hdgzk547K6LIdH646_W_krwgC98SyUtGzFOF1NCmX9DWOqor77f9t8D3/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>{
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 </body>
 
 </html>
