@@ -326,12 +326,55 @@ form btn2{
 }
 
 
-/* -----------------css for making web responsive---------- */
 nav .fa-solid{
    display: none;
 }
+.whatsapp{
+   background-color: #fff;
+   border: 1px solid #25D366;
+   padding: 5px;
+   margin-top: 20px;
+   position: absolute;
+   width: 9.2em;
+   height: 2em;
+   transition: 0.5s;
+   font-size: 17px;
+   border-radius: 0.4em;
+   }
+   .whatsapp p{
+      position: absolute;
+   top: 0.4em;
+   left: 1.15em;
+   margin: 0;
+   padding: 0;
+   transition: .5s;
+   color: #25D366;
+   }
+   .whatsapp svg{
+      position: absolute;
+   top: 0.45em;
+   right: 0.5em;
+   margin: 0;
+   padding: 0;
+   opacity: 0;
+   transition: 0.5s;
+   height: 1em;
+   fill: #fff
+   }
+   .whatsapp:hover p{
+      left: 0.5em;
+   color: #fff
+   }
+   .whatsapp:hover svg{
+      opacity: 1;
+   }
+   .whatsapp:hover{
+      background-color: #25D366;
+   }
+   
+   
 
-
+/* -----------------css for making web responsive---------- */
 @media only screen and (max-width: 600px){
    #header{
       background-image: url(images/phonebackground.jpg);
