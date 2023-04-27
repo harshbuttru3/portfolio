@@ -9,6 +9,7 @@
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/62df35a1e5.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
 </head>
 
 <body>
@@ -27,7 +28,7 @@
                 <i class="fa-solid fa-bars" style="color: #d6d8dc;" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
-                <p>Web Developer</p>
+                <p id="typedjs"></p>
                 <h1>Hi, i am <span>Shivam</span> <br> kumar from India</h1>
             </div>
         </div>
@@ -231,6 +232,12 @@ function closemenu(){
         })
         .catch(error => console.error('Error!', error.message))
     })
+  </script>
+   <script>
+    var typed = new Typed('#typedjs', {
+      strings: ['web developer.', 'student.', 'melophile.'],
+      typeSpeed: 50,
+    });
   </script>
 </body>
 
