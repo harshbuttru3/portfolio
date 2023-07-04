@@ -1,175 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>portfolio</title>
     <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/62df35a1e5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/62df35a1e5.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="header">
-        <div class="container">
-            <nav>
-                <img src="images/shivam.png" class="logo" alt="logo">
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Service</a></li>
-                    <li><a href="#portfolio">portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fa-solid fa-xmark" style="color: #e7ebf3;" onclick="closemenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars" style="color: #d6d8dc;" onclick="openmenu()"></i>
-            </nav>
-            <div class="header-text">
-                <p id="typedjs"></p>
-                <h1>Hi, i am <span>Shivam</span> <br> kumar from India</h1>
-            </div>
+      <div class="container">
+        <nav>
+          <img src="images/shivam.png" class="logo" alt="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Service</a></li>
+            <li><a href="#portfolio">portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i
+              class="fa-solid fa-xmark"
+              style="color: #e7ebf3"
+              onclick="closemenu()"
+            ></i>
+          </ul>
+          <i
+            class="fa-solid fa-bars"
+            style="color: #d6d8dc"
+            onclick="openmenu()"
+          ></i>
+        </nav>
+        <div class="header-text">
+          <p id="typedjs"></p>
+          <h1>
+            Hi, i am <span>Shivam</span> <br />
+            kumar from India
+          </h1>
         </div>
+      </div>
     </div>
     <!-- ---------------------about------------------- -->
     <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/shivamuser.jpg" alt="">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="subtitle">About Me</h1>
-                    <p>I am a passionate and enthusiastic coder who is currently focused on learning web development.
-                        With my recent intermediate examination success, I am excited to continue expanding my knowledge
-                        in the field and keeping up-to-date with the latest technologies. As a tech enthusiast, I enjoy
-                        exploring new tools and platforms to optimize my coding skills and build innovative solutions.
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/shivamuser.jpg" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="subtitle">About Me</h1>
+            <p>
+              I am a passionate and enthusiastic coder who is currently focused
+              on learning web development. With my recent intermediate
+              examination success, I am excited to continue expanding my
+              knowledge in the field and keeping up-to-date with the latest
+              technologies. As a tech enthusiast, I enjoy exploring new tools
+              and platforms to optimize my coding skills and build innovative
+              solutions. My dedication to the craft is fueled by a desire to
+              make a positive impact through technology. I believe that with the
+              right skills and knowledge, we can create solutions that address
+              complex challenges and make the world a better place. I am
+              committed to staying at the forefront of the industry and pushing
+              the boundaries of what is possible through code. In addition to my
+              technical abilities, I also value collaboration and teamwork. I
+              believe that the best results come from working together and
+              leveraging the diverse perspectives and strengths of a team. I am
+              excited to continue growing my skills and contributing to exciting
+              projects in the world of web development.
+            </p>
 
-                        My dedication to the craft is fueled by a desire to make a positive impact through technology. I
-                        believe that with the right skills and knowledge, we can create solutions that address complex
-                        challenges and make the world a better place. I am committed to staying at the forefront of the
-                        industry and pushing the boundaries of what is possible through code.
-
-                        In addition to my technical abilities, I also value collaboration and teamwork. I believe that
-                        the best results come from working together and leveraging the diverse perspectives and
-                        strengths of a team. I am excited to continue growing my skills and contributing to exciting
-                        projects in the world of web development.</p>
-
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links"onclick="opentab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills" >
-                        <ul>
-                            <li><span>Web development</span><br> Developing dynamic and static websites.</li>
-                            <li><span>UI/UX</span> <br> Designing web/App interfaces</li>
-                            <li><span>Linux Admin</span> <br> Advance linux administrator</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience" >
-                        <ul>
-                            <li><span>2023-current</span><br> Learning javascript data sturcture and algorithm</li>
-                            <li><span>Internship 2022-2023</span> <br> Worked as an intern in a startup</li>
-                            <li><span>Internship</span> <br> worked as apprentice in a startup.</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>Bsc in physics(2022-2025)</span><br>Currently pursuing bachelor of physics in CM.
-                                Sc college, Darbhanga.</li>
-                            <li><span>Intermediate(2020-2022)</span> <br> Passed intermediate examination via state
-                                board with 88%.</li>
-                            <li><span>Matriculation(2020)</span> <br>Passed Matriculation examination with 90% in CBSE
-                                curriculum (GBPS) </li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
             </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Web development</span><br />
+                  Developing dynamic and static websites using HTML, CSS and JavaScript.(Currently Learning REACTJS).
+                </li>
+                <li>
+                  <span>UI/UX</span> <br />
+                  Designing web/App interfaces
+                </li>
+                <li>
+                  <span>Linux Admin</span> <br />
+                  Advance linux administrator
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2023-current</span><br />
+                  Created websites for some clients 
+                </li>
+                <li>
+                  <span>Internship 2022-2023</span> <br />
+                  Worked as an intern in a startup
+                </li>
+                <li>
+                  <span>Internship</span> <br />
+                  worked as apprentice in a startup.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>Bsc in physics(2022-2025)</span><br />Currently pursuing
+                  bachelor of physics in CM. Sc college, Darbhanga.
+                </li>
+                <li>
+                  <span>Intermediate(2020-2022)</span> <br />
+                  Passed intermediate examination via state board with 88%.
+                </li>
+                <li>
+                  <span>Matriculation(2020)</span> <br />Passed Matriculation
+                  examination with 90% in CBSE curriculum (GBPS)
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-  <!-- -----------------------------services---------- -->
-  <div id="services">
-    <div class="container">
+    <!-- -----------------------------services---------- -->
+    <div id="services">
+      <div class="container">
         <h1 class="subtitle">My Services</h1>
         <div class="services-list">
-            <div>
-                <i class="fa-solid fa-code" style="color: #dae1ec;"></i>
-                <h2>Web Designing</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur optio itaque temporibus voluptatibus ipsum repudiandae veritatis natus iure sit eius!</p>
-                <a href="#">Learn more</a>
-            </div>
-            <div>
-                <i class="fa-solid fa-palette" style="color: #dae1ec;"></i>
-                <h2>UI/UX Desinger</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur optio itaque temporibus voluptatibus ipsum repudiandae veritatis natus iure sit eius!</p>
-                <a href="#">Learn more</a>
-            </div>
-            <div>
-                <i class="fa-brands fa-linux" style="color: #dae1ec;"></i>
-                <h2>Linux Admin</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur optio itaque temporibus voluptatibus ipsum repudiandae veritatis natus iure sit eius!</p>
-                <a href="#">Learn more</a>
-            </div>
+          <div>
+            <i class="fa-solid fa-code" style="color: #dae1ec"></i>
+            <h2>Web Designing</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Consectetur optio itaque temporibus voluptatibus ipsum repudiandae
+              veritatis natus iure sit eius!
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-palette" style="color: #dae1ec"></i>
+            <h2>UI/UX Desinger</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Consectetur optio itaque temporibus voluptatibus ipsum repudiandae
+              veritatis natus iure sit eius!
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-linux" style="color: #dae1ec"></i>
+            <h2>Linux Admin</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Consectetur optio itaque temporibus voluptatibus ipsum repudiandae
+              veritatis natus iure sit eius!
+            </p>
+            <a href="#">Learn more</a>
+          </div>
         </div>
+      </div>
     </div>
-  </div>
-  <!-- --------------------------------------Protfolio---------- -->
-  <div id="portfolio">
-    <div class="container">
+    <!-- --------------------------------------Protfolio---------- -->
+    <div id="portfolio">
+      <div class="container">
         <h1 class="subtitle">My Works</h1>
         <div class="work-list">
-            <div class="work">
-                <img src="images/work-1.png" alt="">
-                <div class="layer">
-                    <h3>Social Media App</h3>
-                    <p>The app connects you to the talented peooples around the world</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #012cea;"></i></a>
-                </div>
+          <div class="work">
+            <img src="images/work-1.png" alt="" />
+            <div class="layer">
+              <h3>Weather App</h3>
+              <p>
+                An app that shows the live Weather Condition based on city names using openWeather API.
+              </p>
+              <a href="https://harshbuttru3.github.io/weather/"
+                ><i
+                  class="fa-solid fa-arrow-up-right-from-square"
+                  style="color: #012cea"
+                ></i
+              ></a>
             </div>
-            <div class="work">
-                <img src="images/work-2.png" alt="">
-                <div class="layer">
-                    <h3>Music App</h3>
-                    <p>This is a great music streaming app like spotify.</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #012cea;"></i></a>
-                </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" alt="" />
+            <div class="layer">
+              <h3>To-Do App</h3>
+              <p>A To-Do app that stores your to-do task in localStorage so that they can be retrived even after page reload and browser restart.</p>
+              <a href="https://harshbuttru3.github.io/todo2/"
+                ><i
+                  class="fa-solid fa-arrow-up-right-from-square"
+                  style="color: #012cea"
+                ></i
+              ></a>
             </div>
-            <div class="work">
-                <img src="images/work-3.png" alt="">
-                <div class="layer">
-                    <h3>Social Media App</h3>
-                    <p>The app connects you to the talented peooples around the world</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #012cea;"></i></a>
-                </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" alt="" />
+            <div class="layer">
+              <h3>Hackathon List App</h3>
+              <p>
+                App with a list of upcoming coding contest using the api of kontest.
+              </p>
+              <a href="https://harshbuttru3.github.io/hackathon/"
+                ><i
+                  class="fa-solid fa-arrow-up-right-from-square"
+                  style="color: #012cea"
+                ></i
+              ></a>
             </div>
+          </div>
         </div>
-        <a href="https://puginarug.com" class="btn">See more</a>
-
+        <a href="https://github.com/harshbuttru3/" class="btn">See more</a>
+      </div>
     </div>
-  </div>
     <!-- --------------------------------------contact----------------- -->
-        <div id="contact">
-            <div class="container">
-                <div class="row">
-                    <div class="contact-left">
-                        <h1 class="subtitle">Contact Me</h1>
-                        <p><i class="fa-regular fa-envelope" style="color: #f72222;"></i><a href="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=shivamkumarpaswan7488700578@gmail.com&tf=1" target="_blank" rel="noopener noreferrer">shivamkumarpaswan7488@gmail.com</a></p>
-                        <p><i class="fa-solid fa-phone" style="color: #7be641;"></i>+91 7488700578</p>
-                        <div class="social-icons">
-                            <a href="https://instagram.com/har2hbuttru3" target="_blank"><i class="fa-brands fa-instagram" style="color: #E4405F;"></i></a>
-                            <a href="https://github.com/harshbuttru3" target="_blank"><i class="fa-brands fa-github" style="color: #5a5858;"></i></a>
-                            <a href="https://t.me/user_name_is_unavailable" target="_blank"><i class="fa-brands fa-telegram" style="color: #1765ee;"></i></a>
-                            
-                        </div>
-                            <!-- --------------------whatsapp button-------------- -->
-                            <button class="whatsapp"><a href="https://wa.link/jto3ux" target="_blank">
-                                <p>Whatsapp Me</p>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi
-                                bi-whatsapp" viewBox="0 0 16 16">
-                                <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="subtitle">Contact Me</h1>
+            <p>
+              <i class="fa-regular fa-envelope" style="color: #f72222"></i
+              ><a
+                href="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=shivamkumarpaswan7488700578@gmail.com&tf=1"
+                target="_blank"
+                rel="noopener noreferrer"
+                >shivamkumarpaswan7488@gmail.com</a
+              >
+            </p>
+            <p>
+              <i class="fa-solid fa-phone" style="color: #7be641"></i>+91
+              7488700578
+            </p>
+            <div class="social-icons">
+              <a href="https://instagram.com/127.0.0.1_7777" target="_blank"
+                ><i class="fa-brands fa-instagram" style="color: #e4405f"></i
+              ></a>
+              <a href="https://github.com/harshbuttru3" target="_blank"
+                ><i class="fa-brands fa-github" style="color: #5a5858"></i
+              ></a>
+              <a href="https://t.me/user_name_is_unavailable" target="_blank"
+                ><i class="fa-brands fa-telegram" style="color: #1765ee"></i
+              ></a>
+            </div>
+            <!-- --------------------whatsapp button-------------- -->
+            <button class="whatsapp">
+              <a href="https://wa.link/jto3ux" target="_blank">
+                <p>Whatsapp Me</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-whatsapp"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0
                                 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0
                                 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0
                                 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626
@@ -182,66 +282,81 @@
                                 7-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71
                                 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129
                                 1.246.08.38-.058 1.171-.48
-                                1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"></path>
-                                </svg></a>
-                                </button><br>
+                                1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"
+                  ></path>
+                </svg>
+              </a></button
+            ><br />
 
-                            
-                        <a href="images/Shivam kumar.pdf" download class="btn btn2">Download cv</a>
-                    </div>
-                    <div class="contact-right">
-                        <form name="submit-to-google-sheet">
-                            <input type="text" name="Name" placeholder="Your Name" required>
-                            <input type="email" name="email" placeholder="Your Email" required>
-                            <textarea name="message" id=""  rows="6" placeholder="Your Message"></textarea>
-                            <button type="submit" class="btn btn2">Submit</button>
-                        </form>
-                        <span id="msg"></span>
-
-                    </div>
-                </div>
-            </div>
-            <div class="copyright">
-                <p>Made by Harsh with <i class="fa-solid fa-heart" style="color: #f2070f;"></i></p>
-            </div>
+            <a href="images/Shivam kumar.pdf" download class="btn btn2"
+              >Download cv</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="message"
+                id=""
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
         </div>
-<script>
-   var sidemeu = document.getElementById("sidemenu");
-function openmenu(){
-  sidemeu.style.right = "0";
-}
-function closemenu(){
-    sidemeu.style.right = "-200px"
-}
-</script>
-<!-- ===========script for google sheet========= -->
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbzRv9lpODh7Hdgzk547K6LIdH646_W_krwgC98SyUtGzFOF1NCmX9DWOqor77f9t8D3/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response =>{
-            msg.innerHTML = "Message sent successfully"
-            setTimeout(function(){
-                msg.innerHTML = ""
-            }, 5000)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
-   <script>
-    var typed = new Typed('#typedjs', {
-      strings: [' Web Developer.', ' Student.', ' Melophile🎵.', 'Selenophile🌙.' ],
-      typeSpeed: 70,
-      loop: true,
-      showCursor: false,
-      smartBackspace: true
-    });
-  </script>
-</body>
+      </div>
+      <div class="copyright">
+        <p>
+          Made by Harsh with
+          <i class="fa-solid fa-heart" style="color: #f2070f"></i>
+        </p>
+      </div>
+    </div>
+    <script>
+      var sidemeu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemeu.style.right = "0";
+      }
+      function closemenu() {
+        sidemeu.style.right = "-200px";
+      }
+    </script>
+    <!-- ===========script for google sheet========= -->
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbzRv9lpODh7Hdgzk547K6LIdH646_W_krwgC98SyUtGzFOF1NCmX9DWOqor77f9t8D3/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
 
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+    <script>
+      var typed = new Typed("#typedjs", {
+        strings: [" Web Developer.", " Student.", "Learner.", "Freelancer"],
+        typeSpeed: 70,
+        loop: true,
+        showCursor: false,
+        smartBackspace: true,
+      });
+    </script>
+  </body>
 </html>
