@@ -102,12 +102,13 @@ body{
  }
  .tab-links{
     margin-right: 50px;
+    margin-bottom: 20px;
     font-size: 18px;
     font-weight: 800;
     cursor: pointer;
     position: relative;
  }
- .tab-links::after{
+ p.tab-links::after{
     content: '';
     width: 0;
     height: 3px;
@@ -115,11 +116,11 @@ body{
     position: absolute;
     left: 0;
     bottom: -8px;
-    transition: .5s;
+    transition: width .5s;
 
  }
  .tab-links.active-link::after{
-    width: 50%;
+    width: 100%;
  }
  .tab-contents ul li{
    list-style: none;
@@ -168,7 +169,7 @@ body{
 .services-list div{
    text-decoration: none;
    color: #fff;
-   font-size: 12px;
+   font-size: 16px;
    margin-top: 20px;
    display: inline-block;
    animation: floatImage 4s ease-in-out infinite;
@@ -275,6 +276,9 @@ body{
 }
 
 /* ----------------contact----------- */
+#contact .container p a{
+   color: #ff004f;
+}
 .contact-left{
    flex-basis: 35%;
 }
@@ -457,3 +461,57 @@ nav .fa-solid{
    margin-top: -40px;
    display: block;
 }
+
+/* -------------slider-------
+#achievements{
+   margin-bottom: 10%;
+}
+
+.slider {
+   width: 100%;
+   max-width: 800px;
+   height: 350px;
+   position: relative;
+ }
+ 
+ .slide {
+   width: 100%;
+   max-width: 800px;
+   height: 350px;
+   position: absolute;
+   transition: all 0.5s;
+ }
+ 
+ .slide img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+ }
+ 
+ .btnSlider {
+   position: absolute;
+   width: 40px;
+   height: 40px;
+   padding: 10px;
+   border: none;
+   border-radius: 50%;
+   z-index: 10px;
+   cursor: pointer;
+   background-color: #fff;
+   font-size: 18px;
+ }
+ 
+ .btnSlider:active {
+   transform: scale(1.1);
+ }
+ 
+ .btnSlider-prev {
+   top: 45%;
+   left: 2%;
+ }
+ 
+ .btnSlider-next {
+   top: 45%;
+   right: 2%;
+ }
+  */
